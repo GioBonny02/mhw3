@@ -1,0 +1,324 @@
+body {
+  margin: 0px;
+}
+
+header {
+  height: 500px;
+  color: white;
+  background-image: url(sfondo.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 0.875em;
+  padding: 20px; 
+}
+
+a.pulsante {
+  color: white;
+  border-radius: 100px;
+  border: 2px solid white;
+  padding: 10px 20px;
+  margin-right: 20px;
+}
+  
+a.pulsante:hover {
+  color: black;
+  background-color: white;
+}
+
+header h1 strong,
+.pulsante,
+#links {
+  font-family: 'Open Sans',sans-serif;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 1em;
+  line-height: 1.5; /*altezza della riga*/
+  font-weight: bold; /*grassetto*/
+  text-align: center;
+  z-index: 1;
+ } 
+  
+ h1 a.pulsante {
+  border: 0px;
+  background-color: rgb(179, 150, 54);
+  display: inline-block;
+}
+
+h1 a.pulsante:hover {
+  background-color: white;
+  color: black;
+}
+
+header h1 em {
+  font-size: 1.75em;
+  letter-spacing: 1px;
+}
+  
+header h1 strong {
+  font-size: 3.75em;
+  letter-spacing: 4px;
+}
+
+header h1 a {
+  font-size: 0.9em;
+}
+  
+#tendina {
+  display: none; /*menu a tendina non presente*/
+}
+  
+#tendina div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+  
+#links a {
+  margin: 15px; /*spazio tra i pulsanti in alto*/
+}
+  
+#nome {
+  font-size: 2.5em;
+}
+
+#profilo{
+  margin-top: -54px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+  
+#logo_foto {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  border: 4px solid whitesmoke;
+  background-image: url(logo_foto.JPG);
+  background-size: cover;
+  background-position: center;
+}
+ 
+section{
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 66.67%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#profilo h3{
+  font-size: 1rem;
+  margin: .2rem;
+  margin-block-end: 0;
+}
+#profilo p{
+  font-size: .7rem;
+  margin: 0;
+  margin-bottom: .5rem;
+}
+  
+article{
+  margin-bottom: 120px;
+  padding: 7px;
+  display: flex;
+}
+  
+article .id{
+  color: black;
+  margin-right: 40px;
+  font-size: 2em;
+}
+  
+article .descrizione{
+  width: 100%;
+  height: 100%;
+}
+  
+article .titolo{
+  font-size: 2em;
+  text-transform: uppercase;
+}
+  
+article .articolo{
+  font-size: 1.1em;
+  margin: 20px 0;
+  line-height: 1.5;
+  text-align: justify;
+}
+  
+article .image{
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%; 
+  max-width: 1340px;
+  max-height: 650px;
+}
+  
+footer {
+  height: 100px;
+  background: Black;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+}
+  
+footer strong{
+  font-size: .8em;
+}
+  
+footer p{
+  margin: 0px;
+  font-size: .7em;
+}
+
+@media (max-width: 700px){
+  html{
+    font-size: 12px;
+  }
+  section{
+    width: 95%;
+  }
+  header {
+    height: 300px;
+    line-height: 1.2;
+  }
+  #nome {
+    font-size: 1em;
+  }
+  header h1 strong {
+    font-size: 2em;
+    letter-spacing: 4px;
+  }
+  header h1 em {
+    font-size: 1em;
+    letter-spacing: 1px;
+  }
+  #links {
+    display: none;
+  }
+  #tendina {
+    display: block;
+  }
+  .link{
+    font-size: 1em;
+  }
+  label{
+    font-size: 1em;
+  }
+  #ris_ricerca{
+    max-width: 60%;
+  }
+  #content, #service{
+    max-width: 60%;
+  }
+}
+
+#search{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 450px;
+}
+
+#search_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}
+
+#content, #service {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  color: #333;
+  width: 100%;
+}
+
+.submit {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin: 1.5em;
+}
+
+.submit:hover {
+  background-color: #3e8e41;
+}
+
+#ris_ricerca {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ris_ricerca .link{
+  width: 100%;
+  max-width: 450px;
+  margin: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  line-height: 30px;
+  white-space: nowrap;
+  margin-bottom: .8em;
+
+}
+
+.link {  /* risultati links della ricerca*/ 
+  background-color: rgb(179, 150, 54);
+  color: white;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  height: 20px;
+  padding: 10px 20px 20px 20px;
+  margin-right: 20px;
+  text-align: center;
+  text-decoration: none;
+}
